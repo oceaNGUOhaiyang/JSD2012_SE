@@ -13,15 +13,15 @@ public class SplitDemo {
          * ，则拆分后第一项就是空字符串，
          * 如果末尾出现可拆分型，所有拆分出来的空字符串会被忽略
          */
-//        String str = "12..3556.996..8";
-//        String[] arr = str.split("\\.");
-//        System.out.println(arr.length);
-//        for (int i = 0; i <arr.length ; i++) {
-//            System.out.println(arr[i]);
-//        }
-        String regex = "(fk|nmsl|nc|five|nm)";
-        String message = "fk!你真是nm铁five";
-        message = message.replaceAll(regex,"****");
-        System.out.println(message);
+        String str = "12..3556.996..8";
+        String[] arr = str.split("\\.",5);
+        System.out.println(arr.length);
+        for (int i = 0; i <arr.length ; i++) {
+            System.out.println(arr[i]);
+        }
+//        String regex = "(fk|nmsl|nc|five|nm)";
+//        String message = "fk!你真是nm铁five";
+//        message = message.replaceAll(regex,"****");
+//        System.out.println(message);
     }
 }
